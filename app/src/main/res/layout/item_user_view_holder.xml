@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/default_margin"
+    android:layout_marginVertical="@dimen/half_margin"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:padding="@dimen/double_padding">
+
+        <ImageView
+            android:id="@+id/user_avatar_image_view"
+            android:layout_width="@dimen/default_image_view_size"
+            android:layout_height="@dimen/default_image_view_size"
+            android:contentDescription="@string/user_avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/double_margin"
+            android:layout_weight="0.5"
+            android:maxLines="1"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@id/phone_number_text_view"
+            app:layout_constraintStart_toEndOf="@id/user_avatar_image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Имя Фамилия" />
+
+        <TextView
+            android:id="@+id/phone_number_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/double_margin"
+            android:layout_weight="0.5"
+            android:maxLines="1"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/user_avatar_image_view"
+            app:layout_constraintTop_toBottomOf="@id/name_text_view"
+            tools:text="+79541231212" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

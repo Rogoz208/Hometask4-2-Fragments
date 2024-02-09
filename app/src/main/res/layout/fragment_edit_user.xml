@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".presentation.edit_user_screen.EditUserFragment">
+
+    <ImageView
+        android:id="@+id/user_avatar_image_view"
+        android:layout_width="@dimen/double_image_view_size"
+        android:layout_height="@dimen/double_image_view_size"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:contentDescription="@string/user_avatar"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <EditText
+        android:id="@+id/avatar_url_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/half_margin"
+        android:hint="@string/enter_image_url"
+        android:importantForAutofill="no"
+        android:inputType="text|textUri"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/first_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/half_margin"
+        android:hint="@string/enter_first_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/last_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/half_margin"
+        android:hint="@string/enter_second_name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/phone_number_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/half_margin"
+        android:hint="@string/enter_phone_number"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/half_margin"
+        android:text="@string/save" />
+
+</LinearLayout>

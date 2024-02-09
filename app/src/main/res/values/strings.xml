@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Hometask4-2 Fragments</string>
+    <string name="app_name">Hometask4–2 Fragments</string>
+    <string name="user_avatar">User avatar</string>
+    <string name="enter_image_url">Enter image url</string>
+    <string name="enter_first_name">Enter first name</string>
+    <string name="enter_second_name">Enter second name</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="save">SAVE</string>
 </resources>
